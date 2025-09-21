@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         setTimeout(() => {
             window.location.href = this.href; // redireciona depois de um tempo
-        }, 1000); // espera 1 segundo (ou o tempo que quiser)
+        }, 2000); // espera 2 segundo 
     });
 });
 
