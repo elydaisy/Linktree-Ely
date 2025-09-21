@@ -46,3 +46,27 @@ p {
 .links a:hover {
     background: #131907;
 }
+
+  #loading-spinner {
+     display: none; /* escondido até ser ativado */
+    width: 60px;
+    height: 60px;
+    border: 6px solid #f3f3f3; /* Borda cinza */
+    border-top: 6px solid #3498db; /* Borda azul */
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+
+    /* Centralizar na tela */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    /* Garantir que fique na frente de tudo */
+    z-index: 99999;
+    background: transparent;
+}
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
